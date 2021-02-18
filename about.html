@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Family</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="navbar-wrapper">
+            <div class="left-column">
+                <div class="nav-link">
+                    <a href="index.html">Amherst</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="lancaster.html">Nashoba</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="family.html">Family</a>
+                </div>
+
+                <div class="nav-link active-nav-link">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div>ALAN CASTILLO</div> 
+            </div>
+        </div>
+
+        <div class="header-bar">
+            <div class="header-master">Experimental Portfolio Made with JavaScript, HTML5, and CSS.</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach(gridItem => {
+        gridItem.addEventListener('mouseover', () => {
+            gridItem.childNodes[1].classList.add('img-darken')
+        })
+        gridItem.addEventListener('mouseout', () => {
+            gridItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>

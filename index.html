@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Amherst</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="navbar-wrapper">
+            <div class="left-column">
+                <div class="nav-link active-nav-link">
+                    <a href="index.html">Amherst</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="lancaster.html">Nashoba</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="family.html">Family</a>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div>ALAN CASTILLO</div> 
+            </div>
+        </div>
+
+        <div class="header-bar">
+            <div class="header-master">Experimental Portfolio Made with JavaScript, HTML5, and CSS.</div>
+        </div>
+
+        <div class="grid-wrapper">
+            <div class="grid-items-wrapper">
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/image\ 7.jpg)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>NOV 25, 2019</h2></div>
+                        <div class="subtitle">New York City with Nishant and Arvind!</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image3.PNG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>MARCH 20, 2020</h2></div>
+                        <div class="subtitle">Spider James at the Dorms</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image2.JPG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>MARCH 7, 2020</h2></div>
+                        <div class="subtitle">Andy Shenanigans</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image1.JPG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>MARCH 20, 2020</h2></div>
+                        <div class="subtitle">Southwest Cutie</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image33.jpg)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>NOV 26, 2019</h2></div>
+                        <div class="subtitle">Nishant! Code Master.</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image4.JPG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>MARCH 20, 2020</h2></div>
+                        <div class="subtitle">#1 Dining, Lobster Steak Night.</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image7.JPG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>OCT 27, 2019</h2></div>
+                        <div class="subtitle">Bruh! - Ruben</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image6.JPG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>DEC 5, 2019</h2></div>
+                        <div class="subtitle">Ginger Bread Houses at Umass Amherst. Sorry Jake.</div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-img-background" style="background-image:url(images/Amherst/Image8.JPG)"></div>
+                    <div class="text-wrapper">
+                        <div class="header"><h2>OCT 29, 2019</h2></div>
+                        <div class="subtitle">Enter Stanley</div>
+                    </div>
+                </div>                    
+            </div>     
+        </div>
+
+    </div>
+
+</body>
+<script>
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach(gridItem => {
+        gridItem.addEventListener('mouseover', () => {
+            gridItem.childNodes[1].classList.add('img-darken')
+        })
+        gridItem.addEventListener('mouseout', () => {
+            gridItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
